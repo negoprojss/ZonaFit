@@ -20,7 +20,7 @@ public class Cliente {
         this.menbrecia = menbrecia;
     }
 
-    public void  Cliente(int id, String nombre, String apellido, int menbrecia){
+    public  Cliente(int id, String nombre, String apellido, int menbrecia){
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
