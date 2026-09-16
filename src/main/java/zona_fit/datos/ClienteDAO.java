@@ -1,8 +1,6 @@
 package zona_fit.datos;
 
-import zona_fit.conexion.Conexion;
 import zona_fit.dominio.Cliente;
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -151,49 +149,4 @@ public class ClienteDAO implements  IClienteDAO{
         return false;
     }
 
-
-    public static void main(String[] args) {
-        IClienteDAO clienteDAO = new ClienteDAO();
-//        System.out.println("++ lita cleente++");
-//        var clientes = clienteDAO.listaCliente();
-//        clientes.forEach(System.out::println);
-        ///  Busqueda de cliente por id
-//        var cliente1 = new Cliente(2);
-//        System.out.println("antes de la busqueda: "+cliente1+ "\n" );
-//        var encontrado = clienteDAO.buscarClientePorID(cliente1);
-//        if (encontrado)
-//            System.out.println("\n Cliente encontrado: "+cliente1);
-//        else
-//            System.out.println("\n no se encntro nungun cliente con estos datos: "+cliente1.getId());
-
-//        ///  Agregar Cliente
-//            var nuevoClieten = new Cliente("jorge","vargas mencho",6);
-//            var agregado = clienteDAO.agregarCliente(nuevoClieten);
-//            if (agregado)
-//                System.out.println("se agrego: "+nuevoClieten);
-//            else
-//                System.out.println("nose puedo agregar: "+clienteDAO);
-
-        ///  Modificar cliente
-//        var clienteModificado = new Cliente(2, "pepe","mungia serrano",2);
-//        var modificadoCliente = clienteDAO.modificarCliente(clienteModificado);
-//        if (modificadoCliente)
-//            System.out.println("se modifica correcto");
-//        else
-//            System.out.println("no se modifico cliente");
-
-        /// Eliminar cliene
-        var elinarCliente = new Cliente(1);
-        var eliminadoCliente = clienteDAO.eliminarCliente(elinarCliente);
-        if (eliminadoCliente)
-            System.out.println("se eliminado correcto");
-        else
-            System.out.println("no se eliminado cliente");
-
-            ///  listar clientes
-        System.out.println("++ lista de clientes ++");
-        var clientes = clienteDAO.listaCliente();
-        clientes.forEach(System.out::println);
-
-    }
 }
